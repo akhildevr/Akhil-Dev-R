@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n,big=0;
+	cout<<"Enter Limit : ";
+	cin>>n;
+	int val[n];
+	cout<<"Enter numbers : ";
+	for(int i=0;i<n;i++)
+	{
+		cin>>val[i];
+	}
+	for(int i=0;i<n;i++)
+	{
+		if(val[i] > big)
+		{
+			big=val[i];
+		}
+	}
+	cout<<"Big : "<<big;
+	return 0;
+}
