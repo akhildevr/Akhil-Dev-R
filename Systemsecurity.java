@@ -44,8 +44,8 @@ public class Systemsecurity {
         }
     }
     
-    public static String getMD5EncryptedValue(String password) {
-        final byte[] defaultBytes = password.getBytes();
+    public static String getMD5EncryptedValue(String Value) {
+        final byte[] defaultBytes = Value.getBytes();
         try {
             final MessageDigest md5MsgDigest = MessageDigest.getInstance("MD5");
             md5MsgDigest.reset();
@@ -59,11 +59,11 @@ public class Systemsecurity {
                 }
                 hexString.append(hex);
             }
-            password = hexString + "";
+            Value = hexString + "";
         } catch (final NoSuchAlgorithmException nsae) {
             nsae.printStackTrace();
         }
-        return password;
+        return Value;
     }
 
 }
