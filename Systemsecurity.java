@@ -3,6 +3,7 @@ package systemsecurity;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
 
 
 
@@ -10,9 +11,11 @@ public class Systemsecurity {
 
     public static void main(String[] args) {
     
+        Scanner sc = new Scanner(System.in);
         String hash,new_hash,new_val="";
         int flag=0;
-        hash="e3251075554389fe91d17a794861d47b"; 
+        System.out.println("Enter Hash Value : ");
+        hash=sc.next(); 
         hash=hash.toLowerCase();
 
         for (int i=0000; i<10000;i++) 
