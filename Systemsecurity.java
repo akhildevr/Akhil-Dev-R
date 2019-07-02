@@ -18,7 +18,7 @@ public class Systemsecurity {
         hash=sc.next(); 
         hash=hash.toLowerCase();
 
-        for (int i=0000; i<10000;i++) 
+        for (int i=1000; i<10000;i++) 
         {
             String val=String.valueOf(i);
             new_hash=getMD5EncryptedValue(val);
